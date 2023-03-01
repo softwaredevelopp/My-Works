@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap Dahil Etme</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <h1></h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+<!-- 
+    notlar:
+     
+    RENKLER:
+
+
+    <button class="btn btn-secondary" type="button">1</button>
+    <button class="btn btn-secondary" type="button">2</button>
+    <button class="btn btn-secondary" type="button">3</button>
+    
+    <button class="btn btn-primary" type="button">primary</button>
+    
+    <br><br>
+    
+    <button class="btn btn-outline-dark" type="button">dark</button>
+
+    <br><br>
+
+    <button class="btn btn-success btn-lg" type="button">Large Button</button>
+
+    <br><br>
+
+    <button class="btn btn-danger btn-lg btn-block" type="button">Block Button</button>
+
+    <br><br>
+
+    <div class="btn-group-vertical">
+        <button class="btn btn-primary" type="button">primary</button>
+        <button class="btn btn-outline-dark" type="button">dark</button>
+        <button class="btn btn-success btn-sm" type="button">Small Button</button>
+    </div>
+    
+    #-------------------------------------------------------#
+    
+    EK RENK VS:
+
+    
+    <div class="bg-danger mt-2 p-4 border border-primary rounded"></div>
+
+    <br><br>
+
+    <div class="shadow bg-light mt-5 p-4 "></div>
+
+    <br><br>
+
+    <div class="bg-danger mt-2 p-5"></div>
+
+    #-------------------------------------------------------#
+
+    HİZALAMA VE DİSPLAY:
+
+
+    <p class="text-justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iste distinctio vero sed quia, qui consequatur aperiam laboriosam ab explicabo quis non nesciunt unde ducimus deserunt sapiente error atque reiciendis.
+    </p>
+
+    <p class="text-center">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas iste distinctio vero sed quia, qui consequatur aperiam laboriosam ab explicabo quis non nesciunt unde ducimus deserunt sapiente error atque reiciendis.
+    </p>
+
+    <blockquote class="blockquote">
+
+        <p>If you can dream it, you can do it.</p>
+
+        <footer class="blockquote-footer">KMK</footer>
+    </blockquote>
+
+    <span class="d-block bg-danger mb-2">Belive</span>
+
+    d-none(yer kaplamaz) veya invisible(yer kaplar silinse bile) ekrandan bir yazıyı yok etmek için
+
+    <div class="d-inline-block bg-primary">
+        <h3>Product Name</h3>
+        Description
+    </div>
+
+    #-------------------------------------------------------#
+
+    TABLOLAR:
+
+
+        <body class="w-75 mx-auto my-4">
+
+    <div class="table-responsive">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kerim Mert</td>
+                <td>Kurt</td>
+                <td>abc@gmail.com</td>
+                <td>1</td>
+                <td>Kerim Mert</td>
+                <td>Kurt</td>
+                <td>abc@gmail.com</td>
+                <td>1</td>
+                <td>Kerim Mert</td>
+                <td>Kurt</td>
+                <td>abc@gmail.com</td>
+                <td>1</td>
+                <td>Kerim Mert</td>
+                <td>Kurt</td>
+                <td>abc@gmail.com</td>
+            </tr>
+
+                <tr>
+                <td>2</td>
+                <td>Burak Kaan</td>
+                <td>Kurt</td>
+                <td>abcdefg@gmail.com</td>
+            </tr>
+                
+                
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+    #-------------------------------------------------------#
+
+    LİSTELER:
+
+
+    <ul class="list-unstyled">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+      <ul class="list-group w-25">
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+    </ul>
+    
+    #-------------------------------------------------------#
+
+    *******UYARI KUTULARI******
+
+    -----hata kutusu (kırmızı)----
+    <div class="alert alert-danger">
+        <h4>Lorem, ipsum dolor.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates recusandae architecto illo. Aliquid laborum excepturi eum. Corporis repellendus quo cum est, ullam esse deserunt eveniet rerum incidunt. Accusantium, quod?</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corporis deserunt sint dolores totam nihil debitis earum quis itaque dicta.</p>
+    </div>
+
+    
+    <div class="alert alert-primary">
+        Lorem ipsum dolor sit amet.
+        <a class="alert-link" href="">link text</a>
+    </div>
+
+    <div class="alert alert-info mb-3">
+        Lorem ipsum dolor sit amet.
+        <a class="alert-link" href="">link text</a>
+    </div>
+
+    <div class="alert alert-success mb-3">
+        Lorem ipsum dolor sit amet.
+        <a class="alert-link" href="">link text</a>
+    </div>
+
+    ----çarpı ile kapatma----
+    <div class="alert alert-warning aler-dismissible fade show">
+        Lorem ipsum dolor sit amet.
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+    </div>
+
+    ----resim yanına yazı ekleme------
+
+    <div class="media">
+        <img class="mr-3" src="https://via.placeholder.com/64x64" alt="">
+        <div class="media-body">
+            <h5>Lorem, ipsum dolor.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis voluptatum debitis sit laudantium amet quam quidem, sed nostrum iste, eos soluta illo temporibus excepturi tenetur dolorum nihil in consequuntur?</p>
+
+        </div>
+    </div>
+
+    #-------------------------------------------------------#
+
+
+    RESİM EKLEME:
+
+    <img src="foto.jpg" alt="" class="rounded"> normal
+    <img src="foto.jpg" alt="" class="rounded-circle">  yuvarlak    
+    <img src="foto.jpg" alt="" class="rounded-thumbnail">   kare
+
+    ---yazıyı resimlerden sonraya aktarma----
+
+    <div class="clearfix">
+        <img src="foto.jpg" alt="" class="w float-left">
+        <img src="foto.jpg" alt="" class="w float-right">
+    </div>
+
+    <img src="foto.jpg" alt="" class="rounded">
+    <img src="foto.jpg" alt="" class="rounded-circle">
+    <img src="foto.jpg" alt="" class="rounded-thumbnail">
+
+    <br><br>
+
+    <div class="clearfix">
+        <img src="foto.jpg" alt="" class="w float-left">
+        <img src="foto.jpg" alt="" class="w float-right">
+    </div>
+    
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi, adipisci veritatis ullam iste quisquam. Eveniet perferendis deleniti asperiores minus.
+    </p>
+
+    <div class="bg-primary p-3 w-50 float-left"></div>
+    <div class="bg-danger p-3 w-50 float-left"></div>
+
+    #-------------------------------------------------------#
+
+    FORMLAR:
+
+
+    <form>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" class="form-control" placeholder="Enter email">
+            <small class="form-text text-muted">
+                please enter a correct email
+            </small>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="Enter password">
+            <small class="form-text text-muted">
+                please enter correct password
+            </small>
+        </div>
+
+        <div class="form-group">
+            <label for="city">City</label>
+            <select name="city" id="city" class="form-control">
+                <option value="Trabzon">Trabzon</option>
+                <option value="İzmir">İzmir</option>
+                <option value="İstanbul">İstanbul</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="5" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <legend>Hobiler</legend>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Koşmak
+                </label>
+            </div>
+            
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Yürümek
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Kitap Okumak
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Spor Yapmak
+                </label>
+            </div>
+
+        </div>
+
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="rd">
+            <label class="custom-control-label" for="rd">Check</label>
+        </div>
+
+        <div class="input-group">
+
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text" id="ig">@gmail.com</span>
+            </div>
+
+
+    #-------------------------------------------------------#    
+
+    BOOTSTRAP KARTLARI:
+    
+
+        <div class="card">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">
+                Lorem, ipsum dolor.
+            </h5>
+            <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, sed.
+            </p>
+            <button class="btn btn-primary">Click</button>
+        </div>
+    </div>
+
+    <div class="card my-3">
+        <div class="card header">Header
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem, ipsum dolor.</li>
+                    <li class="list-group-item">Lorem, ipsum dolor.</li>
+                    <li class="list-group-item">Lorem, ipsum dolor.</li>
+                    <li class="list-group-item">Lorem, ipsum dolor.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card my-3 w-50">
+        <img src="foto.jpg" class="card-img-top">
+        <div class="card-body">
+            <h4 class="card-title">KMK</h4>
+            <p class="card-text">Lorem, ipsum dolor.</p>
+            <a href="" class="card-link">See Profile</a>
+    </div>
+
+    #-------------------------------------------------------#    
+
+    JUMBOTRON VE NAVİGATİON LİNKLERİ:
+
+
+    #BACKGROUN OLUŞTURMA
+
+     <style>
+           
+           .jumbotron {
+            background-image: url(foto.jpg);
+            background-size: cover;
+            background-position: center;
+           }
+
+        </style>
+</head>
+
+<body class="w-75 mx-auto my-4">
+
+    <div class="jumbotron">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, cum voluptatum cupiditate ut deserunt dicta.
+        </p>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quia.
+        </p>
+        <a href="" class="btn btn-primary btn-lg">Lorem, ipsum.</a>
+    </div>
+
+    
+    <div class="jumbotron">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, cum voluptatum cupiditate ut deserunt dicta.
+        </p>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quia.
+        </p>
+        <a href="" class="btn btn-primary btn-lg">Lorem, ipsum.</a>
+    </div>
+
+    <br><br>
+
+    <nav>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+        </ol>
+    </div>
+    </nav>
+
+    <nav>
+            <div class="container">
+                <ol class="breadcrumb">
+
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active">Products</li>
+                </ol>
+            </div>
+        </nav>
+
+    #-------------------------------------------------------#  
+
+    DROPDOWN:
+
+
+    
+<div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+        </button>
+
+    <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Link 1</a>
+        <a href="#" class="dropdown-item">Link 2</a>
+        <a href="#" class="dropdown-item">Link 3</a>
+    </div>
+
+</div>
+
+    #-------------------------------------------------------# 
+
+    NAVBARS: 
+
+
+    
+    <nav class="navbar bg-light navbar-expand-sm justify-content-center">
+
+        <a href="#" class="navbar-brand">Logo</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar"></div>
+
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 1</a>
+            </li>
+        </ul>
+    </nav>
+
+    #-------------------------------------------------------#
+
+    COLLAPSE VE ACCORDİON
+
+
+    <p>
+        <button type="button" 
+            class="btn btn-primary" 
+            data-toggle="collapse" 
+            data-target="#content">
+                Button
+        </button>
+        
+        <a href="#content" class="btn btn-primary" data-toggle="collapse">
+            Link
+        </a>
+
+    </p>    
+
+    <div id="content" class="collapse show">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis, praesentium magnam consequuntur illo nam? Sapiente quidem laboriosam est et! Animi officia exercitationem aspernatur sed magni, obcaecati dolore ea alias!</p>
+    </div>
+
+    <br><br>
+
+    <div id="accordion">
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <a href="#collapseOne" class="card-link" data-toggle="collapse">
+                        item 1
+                    </a>
+                </div>
+            
+                <div id="collapseOne" class="collapse" data-parents="#accordion">
+
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim officiis odit voluptates exercitationem est, ipsa optio, tempora sunt quia porro veritatis eius corrupti id modi quisquam fugit ipsam distinctio.
+                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <a href="#collapseTwo" class="card-link" data-toggle="collapse">
+                        item 2
+                    </a>
+                </div>
+            
+                <div id="collapseTwo" class="collapse" data-parents="#accordion">
+
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim officiis odit voluptates exercitationem est, ipsa optio, tempora sunt quia porro veritatis eius corrupti id modi quisquam fugit ipsam distinctio.
+                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <a href="#collapseThree" class="card-link" data-toggle="collapse">
+                        item 3
+                    </a>
+                </div>
+            
+                <div id="collapseThree" class="collapse" data-parents="#accordion">
+
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim officiis odit voluptates exercitationem est, ipsa optio, tempora sunt quia porro veritatis eius corrupti id modi quisquam fugit ipsam distinctio.
+                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <a href="#collapseFour" class="card-link" data-toggle="collapse">
+                        item 4
+                    </a>
+                </div>
+            
+                <div id="collapseFour" class="collapse" data-parents="#accordion">
+
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim officiis odit voluptates exercitationem est, ipsa optio, tempora sunt quia porro veritatis eius corrupti id modi quisquam fugit ipsam distinctio.
+                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+
+
+
+
+    </div>
+    
+    #-------------------------------------------------------#
+
+    SLİDER:
+
+
+        <ol class="carousel-indicators">
+        <li data-target="slider1" data-slide-to="0" class="active"></li>
+        <li data-target="slider1" data-slide-to="1" ></li>
+        <li data-target="slider1" data-slide-to="2" ></li>
+    </ol>
+
+    <div id="slider1" class="carousel slide carousel-fade my-5" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="foto2.jpg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slider Header 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, pariatur!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="foto.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="foto3.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="foto4.jpg" alt="">
+            </div>
+        </div>
+        <a href="#slider1" class="carousel-control-prev" data-slide="prev" >
+            <span class="carousel-control-prev"></span>
+        </a>
+        <a href="#slider1" class="carousel-control-next" data-slide="next" >
+            <span class="carousel-control-next"></span>
+        </a>
+    </div>
+
+    #-------------------------------------------------------------#
+    
+    AÇILIR KUTULAR:
+
+
+        
+    <button type="button" 
+        class="btn btn-primary" 
+        data-toggle="modal" 
+        data-target="#myModal">
+            Open Modal
+    </button>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Lorem, ipsum.</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet.
+                </div>
+                <div class="modal-footer">
+                    Lorem, ipsum.
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    #----------------------------------------------------#
+
+    TOOLTİP:
+
+
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text">
+        Hover over me
+    </a>
+
+    <br><br>
+
+    <button type="button" class="btn btn-success">
+        Tooltip with Html
+    </button>
+
+    js kodları:
+
+    <script>
+
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+
+    #------------------------------------------------------#
+
+    SCROLLSPY:
+
+    
+    <style>
+
+        body{
+            position: relative;
+        }
+            
+    </style>
+
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fisxed-top">
+        <div class="container">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div id="home" class="bg-info" style="padding-bottom: 400px; padding-top: 400px;">
+        <div class="container">
+            <h1>Home</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, omnis sed numquam quia officiis dolor saepe earum harum temporibus quod amet, aliquam blanditiis ea? Facere autem delectus quod porro quibusdam!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat cum minus delectus explicabo, fuga, temporibus voluptas est quia neque odit perferendis a nostrum necessitatibus recusandae ex praesentium, iure illo consequatur.
+            </p>
+        </div>
+    </div>
+
+    <div id="about" class="bg-danger" style="padding-bottom: 400px; padding-top: 400px;">
+        <div class="container">
+            <h1>About</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, omnis sed numquam quia officiis dolor saepe earum harum temporibus quod amet, aliquam blanditiis ea? Facere autem delectus quod porro quibusdam!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat cum minus delectus explicabo, fuga, temporibus voluptas est quia neque odit perferendis a nostrum necessitatibus recusandae ex praesentium, iure illo consequatur.
+            </p>
+        </div>
+    </div>
+
+    <div id="services" class="bg-warning" style="padding-bottom: 400px; padding-top: 400px;">
+        <div class="container">
+            <h1>Services</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, omnis sed numquam quia officiis dolor saepe earum harum temporibus quod amet, aliquam blanditiis ea? Facere autem delectus quod porro quibusdam!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat cum minus delectus explicabo, fuga, temporibus voluptas est quia neque odit perferendis a nostrum necessitatibus recusandae ex praesentium, iure illo consequatur.
+            </p>
+        </div>
+    </div>
+
+    <div id="contact" class="bg-success" style="padding-bottom: 400px; padding-top: 400px;">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, omnis sed numquam quia officiis dolor saepe earum harum temporibus quod amet, aliquam blanditiis ea? Facere autem delectus quod porro quibusdam!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat cum minus delectus explicabo, fuga, temporibus voluptas est quia neque odit perferendis a nostrum necessitatibus recusandae ex praesentium, iure illo consequatur.
+            </p>
+        </div>
+    </div>
+
+    #-------------------------------------------------------------#
+
+
+
+    
+
+
+
+
+
+
+
+
+
+-–>
+
+
+
+        
+
+</html>
